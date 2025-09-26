@@ -35,7 +35,7 @@ body {
 }
 
 header, footer, section {
-    padding: 20x;
+    padding: 20px;
     text-align: center;
 }
 h1, h2{
@@ -87,4 +87,40 @@ h1, h2{
     background: rgba(255, 255, 255, 0.25);
     border-color: orange;
 }
+
+/* Coming soon placeholder */
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.coming-card {
+    background: rgba(255,255,255,0.10);
+    color: #fff;
+    padding: 28px 26px;
+    border-radius: 14px;
+    max-width: 640px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    animation: pulseBorder 3s infinite;
+}
+
+.coming-card h3 {
+    margin: 0 0 8px;
+    color: #ffb06b; /* soft orange */
+    font-size: 1.4rem;
+}
+
+.coming-card p {
+    margin: 0;
+    color: rgba(255,255,255,0.9);
+    opacity: 0.95;
+}
+
+@keyframes pulseBorder {
+    0% { box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    50% { box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+    100% { box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
 }
